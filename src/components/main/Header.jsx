@@ -1,18 +1,19 @@
-import React from "react";
+import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header className="flex items-center justify-between px-4 py-2 bg-prussian-blue text-alabaster">
       {/* Left: Hamburger Menu */}
-      <button className="text-2xl">
+      <button className="text-2xl hover:text-alabaster-400">
         <FaBars />
       </button>
 
       {/* Center: Logo and Title */}
       <div className="flex items-center space-x-2">
         <img
-          src="/path-to-logo.png" // Replace with your logo's path
+          src="/images/bar-chart.png" // Replace with your logo's path
           alt="Logo"
           className="h-8 w-8"
         />
@@ -22,7 +23,7 @@ const Header = () => {
       {/* Right: Contact Link */}
       <a
         href="#contact"
-        className="text-sm font-medium hover:underline hover:text-gray-300"
+        className="text-sm font-medium hover:underline hover:text-alabaster-400"
       >
         Contact
       </a>

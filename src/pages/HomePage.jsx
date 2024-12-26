@@ -1,7 +1,12 @@
 import React from "react";
+import Banner from "../components/main/home/Banner";
 
 const HomePage = () => {
-  return <div className="font-ysabeau text-primary font-bold">HomePage</div>;
+  return (
+    <>
+      <Banner />
+    </>
+  );
 };
 
 export default HomePage;

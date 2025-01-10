@@ -5,6 +5,11 @@ const HomePage = () => {
   return (
     <>
       <Banner />
+      <Banner />
+      <Banner />
+      <Banner />
+      <Banner />
+      <Banner />
     </>
   );
 };

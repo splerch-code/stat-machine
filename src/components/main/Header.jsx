@@ -6,7 +6,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
-      <header className="flex items-center justify-between px-4 py-2 bg-prussian-blue text-alabaster">
+      <header className="fixed top-0 left-0 w-full flex items-center justify-between px-4 py-2 bg-prussian-blue text-alabaster z-10 h-16">
         {/* Left: Hamburger Menu */}
         <button
           className="text-2xl hover:text-alabaster-400 rounded-lg border p-2 border-alabaster-300"
